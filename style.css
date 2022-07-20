@@ -14,15 +14,16 @@ body {
     align-items: center;
     /* justify-content: center; */
     background-color: #DD0000;
-    border-radius: 25px;
+    border-radius: 2vw;
     width: 80vw;
     height: 40vw;
-    margin: 60px 180px;
+    margin: 3.5vw 9vw;
+    /* margin: 60px 180px; */
 }
 
 .banner-text {
     color: white;
-    padding: 0px 180px;
+    margin: 0vw 9vw;
 }
 
 h1 {
@@ -42,10 +43,10 @@ h1 {
 
 .watch-live {
     background-color: black;
-    height: 40px;
-    width: 150px;
-    padding-left: 20px;
-    border-radius: 10px;
+    height: 2vw;
+    width: 7.5vw;
+    padding-left: 1vw;
+    border-radius: .5vw;
     display: flex;
     align-items: center;
 }
@@ -66,12 +67,15 @@ h1 {
     height: 3vw;
     width: 10vw;
     margin: .7vw;
-    border-radius: 10px;
+    border-radius: .5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1vw;
+}
 
+h3 {
+    font-size: 1vw;
 }
 
 .button a {
@@ -118,7 +122,7 @@ h1 {
 
     border: 1px solid lightgray;
     border-top: none;
-    border-radius: 10px;
+    border-radius: .5vw;
 }
 
 .blog-img {
@@ -126,8 +130,8 @@ h1 {
 }
 
 .transfer button {
-    padding: 8px 16px;
-    font-size: 15px;
+    padding: .4vw .8vw;
+    font-size: .75vw;
     font-weight: 600;
     margin: 5%;
 }
@@ -136,12 +140,22 @@ h1 {
     margin-left: 5%;
 }
 
+.article-heading b {
+    font-size: 1.5vw;
+}
+
+.icon-align img {
+    width: 1.5vw;
+}
+
 .icon-align {
     display: flex;
     align-items: center;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    color: grey;
 }
 
 .articl-icones {
@@ -149,6 +163,21 @@ h1 {
     display: flex;
     /* margin: 10px 0px; */
     float: left;
+}
+
+.view-all {
+    background-color: #DD0000;
+    height: 4vw;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5vw;
+    color: white;
+    margin-top: 5vw;
+    margin-left: 46vw;
+    font-size: 1.5vw;
+    display: none;
 }
 
 /* ----------
@@ -215,7 +244,7 @@ hr {
     height: 15vw;
     width: 20vw;
     border: .1px solid #E8E8E8;
-    border-radius: 10px;
+    border-radius: .5vw;
     box-shadow: rgb(235, 230, 230);
 }
 
@@ -245,10 +274,153 @@ hr {
     padding-left: 1.5vw;
 }
 
-/* .upcoming-matches {
-    display: flex;
-    flex-direction: row;
-    width: 80vw;
-    padding-left: 9.5vw;
-    padding-top: 5vw;
-} */
+/* ----------------
+    Tab view 
+------------------*/
+@media only screen and (min-width: 375px) and (max-width: 834px) {
+    .article-section {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article-buttons {
+        height: 8.5vw;
+        width: 80vw;
+        background: none;
+        border-radius: 15px;
+    }
+
+    .button {
+        background-color: white;
+        height: 4vw;
+        width: 50vw;
+        margin: .7vw;
+        border: 1px solid #E8E8E8;
+        border-radius: .5vw;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5vw;
+        row-gap: 1.5vw;
+        padding-left: 1.5vw;
+    }
+
+    .view-all {
+        display: flex;
+    }
+}
+
+/* --------------
+    Mobile view 
+-----------------*/
+@media only screen and (max-width: 375px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 84.2vw;
+    }
+
+    .watch-live {
+        background-color: black;
+        height: 3vw;
+        width: 9.5vw;
+        padding-left: 1vw;
+        border-radius: .5vw;
+        display: flex;
+        align-items: center;
+        margin-left: 22vw;
+    }
+
+    .watch-live h3 {
+        font-size: 1.3vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .banner-text-2 {
+        font-size: 2vw;
+    }
+
+    .banner-img img {
+        margin-left: 0%;
+    }
+
+    .article-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------button ------------ */
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15vw;
+    }
+
+    .article-buttons {
+        height: 8.5vw;
+        width: 8vw;
+        background: none;
+        border-radius: 15px;
+    }
+
+    .button {
+        background-color: white;
+        height: 4vw;
+        width: 50vw;
+        margin: .7vw;
+        border: 1px solid #E8E8E8;
+        border-radius: 1vw;
+        font-size: 2vw;
+    }
+
+    .article-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1.5vw;
+        row-gap: 1.5vw;
+        padding-left: 1.5vw;
+        padding-top: 12vw;
+    }
+
+    .small {
+        height: 4vw;
+        width: 40vw;
+        margin-left: 6vw;
+    }
+
+    /* -----articles----- */
+    .transfer button {
+        font-size: 3vw;
+    }
+
+    .article-heading b {
+        font-size: 2.5vw;
+    }
+
+    .icon-align {
+        font-size: 2.5vw;
+    }
+
+    .icon-align img {
+        width: 2.5vw;
+    }
+}
