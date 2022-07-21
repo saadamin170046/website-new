@@ -263,11 +263,25 @@ hr {
 
 .match-text h6 {
     color: lightslategray;
+    font-size: .7vw;
+}
+
+.match-text h3 {
+    font-size: 1vw;
 }
 
 .flags {
     display: flex;
     justify-content: center;
+}
+
+.flags h4 {
+    font-size: 1.5vw;
+}
+
+.flags img {
+    width: 8vw;
+    height: 4vw;
 }
 
 .flag {
@@ -473,7 +487,7 @@ hr {
 
     footer {
         margin-top: 10vw;
-        height: 50vw;
+        height: 60vw;
         width: 100vw;
     }
 
@@ -483,5 +497,12 @@ hr {
 
     .social {
         font-size: 2vw;
+    }
+
+    .footer-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
